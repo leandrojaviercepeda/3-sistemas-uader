@@ -1,0 +1,5 @@
+(DEFUN EXISTE(L ELEM)
+  (COND
+   ((NULL L) NIL)
+   ((= (FIRST L) ELEM) T)
+   (T (EXISTE (REST L) ELEM))))

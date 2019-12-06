@@ -1,0 +1,23 @@
+
+(defun SUB(L) "LISTA CON LOS DE PRIMER NIVEL"
+  (cond
+   ((null L) nil)
+   ((NOT(listp(first L))) (cons (first L) (SUB (rest L))))
+   (T (SUB(rest L)))
+  ))
+
+
+(defun SN(L) "SACO LOS DE PRIMER NIVEL"
+  (cond
+   ((null L) nil)
+   ((listp(first L)) (cons (first L) (SN(rest L))))
+   (T (SN(rest L)))
+  ))
+
+
+(defun SUBLISTAS(L)
+  (cond
+   ((null L) nil)
+   ((NOT(listp(first L))) (cons (SUB L) (SUBLISTAS (SN L))))
+   (T (append (SUBLISTAS (first L)) (SUBLISTAS (rest L))))
+  ))

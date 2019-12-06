@@ -1,0 +1,8 @@
+(DEFUN PARENTESISBALANCEADOS(L) (BALANCEADO L 0))
+
+(DEFUN BALANCEADO(L N)
+  (COND
+   ((NULL L) (COND ((= N 0) T) (T NIL)))
+   ((AND (= N 0) (= (FIRST L) 1)) NIL)
+   ((= (FIRST L) 1) (BALANCEADO (REST L) (- N 1)))
+   (T (BALANCEADO (REST L) (+ N 1)))))

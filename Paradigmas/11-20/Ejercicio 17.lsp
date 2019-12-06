@@ -1,0 +1,12 @@
+(DEFUN MODA(L)
+  (COND
+   ((NULL (REST L)) (FIRST L))
+   ((> (REPETICION L (FIRST L)) (REPETICION L (MODA (REST L)))) (FIRST L))
+   (T (MODA (REST L)))))
+
+(DEFUN REPETICION(L N)
+  (COND
+   ((NULL L) 0)
+   ((EQ (FIRST L) N) (+ 1 (REPETICION (REST L) N)))
+   (T (REPETICION (REST L) N))))
+

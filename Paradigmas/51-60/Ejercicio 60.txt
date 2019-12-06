@@ -1,0 +1,36 @@
+(defun SCOD(L) "CONSIGO EL CODIGO DEL PRIMER ELEMENTO"
+  (cond 
+   ((null L) nil)
+   ((listp(first L)) (first(first L)))
+   (T (SCOD(rest L)))
+  ))
+
+(defun ICOD(L cod) "JUNTO LOS DE IGUAL CODIGO"
+  (cond
+   ((null L) nil)
+   ((= (first(first L)) cod) (cons (first L) (ICOD (rest L) cod)))
+   (T (ICOD (rest L) cod))
+  ))
+
+(defun ECOD(L cod) "ELIMINO LOS DEL CODIGO YA UTILIZADO"
+  (cond 
+   ((null L) nil)
+   ((= (first(first L)) cod) (ECOD(rest L) cod))
+   (T (cons (first L) (ECOD(rest L) cod)))
+  ))
+
+
+(defun SINP(L) "CONSTRUYO UNA SOLA SIN LOS PRIMEROS"
+  (cond
+   ((null L) nil)
+   (T (append (first L) (rest (SINP(rest L)))))
+  )) 
+
+
+(defun CODIGOS(L) 
+  (cond
+   ((null L) nil)
+   (T (cons (SINP(ICOD L (SCOD L))) (CODIGOS (ECOD L (SCOD L)))))
+  ))
+
+

@@ -1,0 +1,6 @@
+(DEFUN MEDIA(L) (/ (SUMATORIA L) (CANTIDAD L)))
+
+(DEFUN SUMATORIA(L)
+  (COND
+   ((NULL L) 0)
+   (t (+ (FIRST L) (SUMATORIA (REST L))))))

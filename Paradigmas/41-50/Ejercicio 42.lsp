@@ -1,0 +1,16 @@
+(DEFUN DIVIDIRLISTAenDOS(L)(CONS (ELIM L (FLOOR (/ (CANTIDAD L) 2))) (CONS (SUBLISTA L (FLOOR (/ (CANTIDAD L) 2))) NIL)))
+
+(DEFUN SUBLISTA(L N)
+  (COND
+  ((= N 0) NIL)
+  (T (CONS (FIRST L) (SUBLISTA (REST L) (- N 1))))))
+
+(DEFUN ELIM(L N)
+  (COND
+  ((= N 0) L)
+  (T (ELIM (REST L) (- N 1)))))
+
+(DEFUN CANTIDAD(L)
+  (COND
+   ((NULL L) 0)
+   (T (+ 1 (CANTIDAD (REST L))))))

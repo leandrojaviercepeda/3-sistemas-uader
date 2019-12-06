@@ -1,0 +1,20 @@
+(DEFUN ArmarLista (L1 L2) (PrimeraEnSegunda (AplanarLista L1) (AplanarLista L2)))
+
+(DEFUN PrimeraEnSegunda (L1 L2)
+(COND
+     ((NULL L1) T)
+     ((ESTA L2 (FIRST L1)) (PrimeraEnSegunda (REST L1) L2))
+     (T NIL)))
+
+(DEFUN ESTA (L N)
+(COND
+     ((NULL L) NIL)
+     ((= (FIRST L) N) T)
+     (T (ESTA (REST L) N))))
+
+
+(DEFUN AplanarLista (L)
+(COND
+     ((NULL L) NIL)
+     ((LISTP (FIRST L)) (APPEND (AplanarLista (FIRST L)) (AplanarLista (REST L))))
+     (T (CONS (FIRST L) (AplanarLista (REST L))))))

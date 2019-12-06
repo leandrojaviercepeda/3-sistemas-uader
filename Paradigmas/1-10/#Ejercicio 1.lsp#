@@ -1,0 +1,1 @@
+(DEFUN CUADRADO (X) (* X X))            

@@ -1,0 +1,13 @@
+(DEFUN PROMEDIO (L) (/ (SUMATORIA L) (CANTIDAD L)))
+
+(DEFUN CANTIDAD (L)
+  (COND
+   ((NULL L) 0)   
+   (T (+ 1 (CANTIDAD (REST L))))))
+
+(DEFUN SUMATORIA (L)
+  (COND
+   ((NULL L) 0)
+   ((LISTP (FIRST L)) (+ (PROMEDIO (FIRST L)) (SUMATORIA (REST L))))
+   (T (+ (FIRST L) (SUMATORIA (REST L))))))
+

@@ -1,0 +1,16 @@
+(DEFUN ARMARPREFIJOS(L) (PREFIJOS L 0 (CANTIDAD L)))
+
+(DEFUN PREFIJOS(L N M)
+  (COND
+   ((= N M) (CONS L NIL))
+   (T (CONS (PREFIJO L N) (PREFIJOS L (+ N 1) M)))))
+
+(DEFUN PREFIJO (L N)
+  (COND
+   ((= N 0) NIL)
+   (T (CONS (FIRST L) (PREFIJO (REST L) (- N 1))))))
+
+(DEFUN CANTIDAD(L)
+  (COND
+   ((NULL L) 0)
+   (T (+ 1 (CANTIDAD (REST L))))))
