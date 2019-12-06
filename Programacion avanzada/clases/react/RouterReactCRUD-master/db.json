@@ -1,0 +1,94 @@
+{
+  "restaurant": [
+    {
+      "precioPlato": "200",
+      "nombrePlato": "Cheescake",
+      "categoria": "postres",
+      "id": 1
+    },
+    {
+      "precioPlato": "300",
+      "nombrePlato": "Pollo al espiedo 400g",
+      "categoria": "cortes",
+      "id": 2
+    },
+    {
+      "precioPlato": "700",
+      "nombrePlato": "Asado tira 500g",
+      "categoria": "cortes",
+      "id": 3
+    },
+    {
+      "nombrePlato": "Tiramiso",
+      "precioPlato": "500",
+      "categoria": "postre",
+      "id": 4
+    },
+    {
+      "nombrePlato": "Tiramiso",
+      "precioPlato": "500",
+      "categoria": "postre",
+      "id": 5
+    },
+    {
+      "nombrePlato": "Tiramiso",
+      "precioPlato": "200",
+      "categoria": "postre",
+      "id": 6
+    },
+    {
+      "nombrePlato": "Helado americana",
+      "precioPlato": "300",
+      "categoria": "postre",
+      "id": 7
+    },
+    {
+      "nombrePlato": "Helado americana",
+      "precioPlato": "300",
+      "categoria": "postre",
+      "id": 8
+    },
+    {
+      "nombrePlato": "Helado americana",
+      "precioPlato": "200",
+      "categoria": "postre",
+      "id": 9
+    },
+    {
+      "nombrePlato": "Helado americana",
+      "precioPlato": "200",
+      "categoria": "postre",
+      "id": 10
+    },
+    {
+      "nombrePlato": "helado Americana",
+      "precioPlato": "400",
+      "categoria": "postre",
+      "id": 11
+    },
+    {
+      "nombrePlato": "Banana con DL",
+      "precioPlato": "300",
+      "categoria": "postre",
+      "id": 12
+    },
+    {
+      "nombrePlato": "Fideos Darth Vader",
+      "precioPlato": "1500",
+      "categoria": "cortes",
+      "id": 13
+    },
+    {
+      "nombrePlato": "Android KitKat",
+      "precioPlato": "500",
+      "categoria": "postre",
+      "id": 14
+    },
+    {
+      "nombrePlato": "Chubaca Free",
+      "precioPlato": "300",
+      "categoria": "bebida",
+      "id": 15
+    }
+  ]
+}
