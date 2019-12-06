@@ -1,0 +1,26 @@
+--Ejercicio 2
+CREATE TABLE empleado(
+	dni int not null,
+	apellido varchar(40),
+	nombre varchar(40),
+	genero char,
+	sueldo int,
+	PRIMARY KEY (dni)
+);
+
+--Ejercicio 3
+INSERT INTO empleado VALUES(25100000,'PEREZ','PABLO','M',18000),
+	(29332501,'SLOTOWIAZDA','MARIA','F',35000),
+	(19302500,'TENEMBAUN','ENRNESTO','M',22500),
+	(33001321,'RINEIRI','EVANGELINA','F',17000),
+	(22958543,'DIAZ','XIMENA', 'F',48000),
+	(35254310,'PEREZ LINDO','MATIAS','M',29000),
+	(33387695,'RICCA','JAVIER', 'M',29700),
+	(25321542,'SIGNORINI','ESTELA' ,'F',45000),
+	(27123456,'REZONICO','CONSTANZA' ,'F',31000),
+	(13334401,'RETAMAR','JOAQUIN' ,'F',35000);
+
+
+--Ejercicio 7
+UPDATE empleado SET genero='M' WHERE dni=13334401;
+INSERT INTO empleado VALUES(13334402,'RETAMAR','ALEJANDRO' ,'F',35000);
