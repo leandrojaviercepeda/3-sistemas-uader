@@ -1,0 +1,25 @@
+{
+  "name": "scripts_generators",
+  "version": "0.1.0",
+  "description": "Generators of random data for BBDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Leandrojaviercepeda/db-weather-station.git"
+  },
+  "author": "Fravega Leandro, Cepeda Leandro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Leandrojaviercepeda/db-weather-station/issues"
+  },
+  "homepage": "https://github.com/Leandrojaviercepeda/db-weather-station#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
